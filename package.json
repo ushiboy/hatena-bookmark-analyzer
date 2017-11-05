@@ -6,7 +6,9 @@
   "scripts": {
     "start": "webpack-dev-server",
     "clean": "rm -rf build",
+    "clean:pages": "rm -rf docs",
     "build": "npm run clean && ENV=production webpack",
+    "build:pages": "npm run clean:pages && ENV=production BUILD_DIR=docs webpack",
     "test": "mocha --require test/setup.js --recursive test",
     "mocha": "mocha --require test/setup.js"
   },

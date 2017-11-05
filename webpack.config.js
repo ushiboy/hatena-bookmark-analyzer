@@ -6,6 +6,7 @@ const fs = require('fs');
 
 function configureWebpack(environment) {
   environment = environment || 'development';
+  const buildDir = process.env.BUILD_DIR || 'build';
   const base = {
     entry: [
       './src/app.js',
@@ -48,12 +49,12 @@ function configureWebpack(environment) {
   };
 
   if (environment === 'production') {
-    fs.mkdirSync(path.join(__dirname, 'build'));
-    fs.copyFileSync(path.join(__dirname, 'index.html'), path.join(__dirname, 'build', 'index.html'));
+    fs.mkdirSync(path.join(__dirname, buildDir));
+    fs.copyFileSync(path.join(__dirname, 'index.html'), path.join(__dirname, buildDir, 'index.html'));
     return Object.assign({}, base, {
       output: {
         filename: 'bundle.js',
-        path: path.join(__dirname, 'build')
+        path: path.join(__dirname, buildDir)
       },
       plugins: base.plugins.concat([
         new webpack.DefinePlugin({
