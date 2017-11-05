@@ -2,6 +2,8 @@
 
 非公式 はてなブックマークアナライザ
 
+[Demo](https://ushiboy.github.io/hatena-bookmark-analyzer/)
+
 ## 起動
 
 ```
