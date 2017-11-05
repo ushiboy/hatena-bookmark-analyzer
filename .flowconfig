@@ -1,0 +1,12 @@
+[ignore]
+.*/node_modules/.*
+
+[include]
+
+[libs]
+./src/decls
+./node_modules/@ushiboy/observable-store/lib/index.js.flow
+
+
+[options]
+unsafe.enable_getters_and_setters=true

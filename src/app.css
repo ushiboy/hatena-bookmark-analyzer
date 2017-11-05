@@ -1,0 +1,6 @@
+$icon-font-path: '../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
+$navbar-inverse-bg: #2C6EBD;
+$navbar-inverse-brand-color: #fff;
+@import '../node_modules/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+@import './presentation/**/*.css';
+

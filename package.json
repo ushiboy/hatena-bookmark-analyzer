@@ -1,0 +1,52 @@
+{
+  "name": "hatena-bookmark-analyzer",
+  "version": "0.1.0",
+  "description": "",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "test": "mocha --require test/setup.js --recursive test",
+    "mocha": "mocha --require test/setup.js"
+  },
+  "author": "ushiboy",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-flow-strip-types": "^6.22.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-power-assert": "^1.0.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "bootstrap-sass": "^3.3.7",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.8.0",
+    "eslint-plugin-flowtype": "^2.39.1",
+    "eslint-plugin-react": "^7.4.0",
+    "extract-text-webpack-plugin": "^3.0.1",
+    "file-loader": "^1.1.5",
+    "flow-bin": "^0.57.2",
+    "mocha": "^4.0.1",
+    "node-sass": "^4.5.3",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-loader": "^2.0.8",
+    "postcss-nested": "^2.1.2",
+    "power-assert": "^1.4.4",
+    "sass-loader": "^6.0.6",
+    "sinon": "^4.0.2",
+    "webpack": "^3.7.1",
+    "webpack-dev-server": "^2.9.1"
+  },
+  "dependencies": {
+    "@ushiboy/observable-store": "^0.1.0",
+    "babel-polyfill": "^6.26.0",
+    "bootstrap.native": "^2.0.17",
+    "chart.js": "^2.7.0",
+    "randomcolor": "^0.5.3",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "tridoron": "^0.2.0"
+  }
+}
