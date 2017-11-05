@@ -5,6 +5,8 @@
   "main": "src/app.js",
   "scripts": {
     "start": "webpack-dev-server",
+    "clean": "rm -rf build",
+    "build": "npm run clean && ENV=production webpack",
     "test": "mocha --require test/setup.js --recursive test",
     "mocha": "mocha --require test/setup.js"
   },
